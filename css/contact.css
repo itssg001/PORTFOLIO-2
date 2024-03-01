@@ -225,7 +225,7 @@ nav .fa-bars{
      position: fixed;
      left: 0;
      top: -300px;
-     transition: top 0.5s;
+     transition: top ease-in-out;
      
     }
     nav .nav-links .fa-xmark{
