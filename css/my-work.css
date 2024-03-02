@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Junge&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -21,6 +18,18 @@ html,body{
     --footer-bg-color:#000000;
     --footer-f-color:#ffffff; 
 }
+@font-face {
+    font-family: head;
+    src: url(../Assets/fonts/Monda/Monda-Bold.ttf);
+}
+@font-face {
+    font-family: sub-head;
+    src: url(../Assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf);
+}
+@font-face {
+    font-family:para;
+    src: url(../Assets/fonts/Junge/Junge-Regular.ttf);
+}
 nav{
     height: 80px;
     width: 100%;
@@ -30,6 +39,7 @@ nav{
     justify-content: space-between;
     padding: 0 25px;
     position: fixed;
+    z-index: 999;
 }
 nav img{
     height: 200px;
@@ -52,7 +62,7 @@ nav .nav-links{
     text-decoration: none;
     color: var(--primary-f-color);
     position: relative;
-    font-family: "Montserrat",sans-serif;
+    font-family:sub-head;
 }
 .nav-links a::after{
     content: "";
@@ -85,12 +95,12 @@ nav .fa-bars{
 }
 .my-work_heading h1{
     font-size:50px;
-    font-family: "Monda",sans-serif;
+    font-family:head;
 }
 .my-work_heading p{
     font-size: 20px;
     color: var(--secondary-f-color);
-    font-family: "Montserrat",sans-serif;
+    font-family:sub-head;
 }
 .my-work_page{
     width: 100%;
@@ -116,12 +126,12 @@ nav .fa-bars{
 
 .my-work_page .project-card h1{
     font-size: 20px;
-    font-family: "Monda",sans-serif;
+    font-family:head;
 }
 .my-work_page .project-card p{
     font-size: 10px;
     color: var(--button-bg-color);
-    font-family: "Junge",sans-serif;
+    font-family: para;
 }
 .my-work_page .project-card img{
     border-radius: 15px;
@@ -137,7 +147,7 @@ nav .fa-bars{
 }
 .footer .left-col h1{
     font-size: 60px;
-    font-family: "Monda",sans-serif;
+    font-family:head;
     color: #ffffff;
     line-height: 100px;
 }
@@ -151,7 +161,7 @@ nav .fa-bars{
     color: #ffffff;
     font-size: 30px;
     position: relative;
-    font-family: "Montserrat",sans-serif;
+    font-family:sub-head;
 }
 
 .designed_developed_by{
@@ -163,7 +173,7 @@ nav .fa-bars{
     color: #545454;
     text-decoration: underline;
     text-align: center;
-    font-family: "Junge",sans-serif;
+    font-family: para;
 }
 @media only screen and (max-width:600px){
     nav .fa-bars{
@@ -196,6 +206,7 @@ nav .fa-bars{
    
      .container{
          width: 100%;
+         padding: 70px 40px;
      }
     .my-work_heading {
         flex-direction: column;

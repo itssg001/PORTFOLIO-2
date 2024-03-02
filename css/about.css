@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Junge&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -21,7 +18,18 @@ html,body{
 --footer-bg-color:#000000;
 --footer-f-color:#ffffff;
 }
-
+@font-face {
+    font-family: head;
+    src: url(../Assets/fonts/Monda/Monda-Bold.ttf);
+}
+@font-face {
+    font-family: sub-head;
+    src: url(../Assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf);
+}
+@font-face {
+    font-family:para;
+    src: url(../Assets/fonts/Junge/Junge-Regular.ttf);
+}
 
 nav{
     height: 80px;
@@ -32,6 +40,7 @@ nav{
     justify-content: space-between;
     padding: 0 25px;
     position: fixed;
+    z-index: 999;
 }
 nav img{
     height: 200px;
@@ -52,7 +61,7 @@ nav .nav-links{
     text-decoration: none;
     color: var(--primary-f-color);
     position: relative;
-    font-family: "Montserrat",sans-serif;
+    font-family:sub-head;
 }
 .nav-links a::after{
     content: "";
@@ -84,7 +93,7 @@ nav .fa-bars{
     padding-top: 100px;
 }
 .page1 .left-col h1{
-    font-family: "Monda",sans-serif;
+    font-family:head;
     font-size: 60px;
 }
 .page1 .right-col img{
@@ -102,7 +111,7 @@ nav .fa-bars{
 }
 .page2 p{
     font-size: 20px;
-    font-family: "Junge",sans-serif;
+    font-family:sub-head;
 }
 /* ---------Page3--------- */
 .page3{
@@ -111,7 +120,7 @@ nav .fa-bars{
 }
 .page3 h1{
     font-size:60px;
-    font-family: "Monda",sans-serif;
+    font-family:head;
 }
 .page3 .first-ex{
     width: 100%;
@@ -126,18 +135,18 @@ nav .fa-bars{
 }
 .page3 .first-ex h2{
     font-size: 25px;
-    font-family: "Montserrat",sans-serif;
+    font-family:sub-head;
 }
 .page3 .first-ex p{
     font-size: 15px;
-    font-family: "Junge",sans-serif;
+    font-family:para;
 }
 .page4{
     margin-top: 20px;
 }
 .page4 h2{
     font-size: 60px;
-    font-family: "Monda",sans-serif;
+    font-family:head;
 }
  .page4 .education{
     width: 100%;
@@ -152,7 +161,7 @@ nav .fa-bars{
 }
 .page4 .education p{
     font-size: 25px;
-    font-family: "Montserrat",sans-serif; 
+    font-family:para; 
 }
 .footer{
     margin-top: 40px;
@@ -165,7 +174,7 @@ nav .fa-bars{
 }
 .footer .left-col h1{
     font-size: 60px;
-    font-family: "Monda",sans-serif;
+    font-family:head;
     color: #ffffff;
     line-height: 100px;
 }
@@ -179,7 +188,7 @@ nav .fa-bars{
     color: #ffffff;
     font-size: 30px;
     position: relative;
-    font-family: "Montserrat",sans-serif;
+    font-family:sub-head;
 }
 
 .designed_developed_by{
@@ -191,7 +200,7 @@ nav .fa-bars{
     color: #545454;
     text-decoration: underline;
     text-align: center;
-    font-family: "Junge",sans-serif;
+    font-family:para;
 }
 @media only screen and (max-width:600px){
     nav .fa-bars{
@@ -224,6 +233,7 @@ nav .fa-bars{
    
      .container{
          width: 100%;
+         padding: 0px 40px;
      }
     .page1{
         flex-direction: column;
