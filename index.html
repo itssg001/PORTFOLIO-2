@@ -16,6 +16,7 @@
     />
   </head>
   <body>
+    <div class="cursor"></div>
     <header>
       <nav>
         <a href="./index.html"><img src="./Assets/SG-logo.png" alt="" /></a>
@@ -32,12 +33,16 @@
       <!-- ------------------Page1------------------- -->
       <div class="page1">
         <div class="left-col">
-          <h1>Hello <br />I'm Sujit.</h1>
+          <h1 class="page1-head">Hello <br />I'm Sujit.</h1>
         </div>
         <div class="right-col">
-          <p>A Frontend Developer and <br />UI/UX Designer</p>
+          <p class="page1_sub-head">
+            A Frontend Developer and <br />UI/UX Designer
+          </p>
           <button class="resume-btn"><a href="#">Resume</a></button>
-          <button class="projects-btn"><a href="#">Projects</a></button>
+          <button class="projects-btn">
+            <a href="./my-work.html">Projects</a>
+          </button>
         </div>
       </div>
       <!-- ---------------------page2---------------- -->
@@ -53,24 +58,24 @@
             </div>
           </div>
         </a>
-        <!-- --------------page3-------------------- -->
-        <div class="page3">
-          <div class="left-col">
-            <p>
-              As a Frontend Developer, I believe in the power of clean and
-              maintainable code to build websites that not only look great but
-              also perform optimally across different devices and platforms. I'm
-              dedicated to staying up-to-date with the latest web technologies
-              and best practices to continually improve my skills and deliver
-              top-notch results to my clients
-            </p>
-          </div>
-          <a href="#" class="right-col"
-            ><div>
-              <h4>See my Resume.</h4>
-            </div></a
-          >
+      </div>
+      <!-- --------------page3-------------------- -->
+      <div class="page3">
+        <div class="left-col">
+          <p>
+            As a Frontend Developer, I believe in the power of clean and
+            maintainable code to build websites that not only look great but
+            also perform optimally across different devices and platforms. I'm
+            dedicated to staying up-to-date with the latest web technologies and
+            best practices to continually improve my skills and deliver
+            top-notch results to my clients
+          </p>
         </div>
+        <a href="#" class="right-col"
+          ><div>
+            <h4>See my Resume.</h4>
+          </div></a
+        >
       </div>
       <!-- -------Page4-------  -->
       <div class="page4">
@@ -107,25 +112,39 @@
             <p>There are some more projects check <span>👉</span></p>
           </div>
         </a>
+      
       </div>
+     
     </div>
     <footer>
       <div class="footer">
         <div class="left-col">
-          <h1>Ready to <br />Collaborate?</h1>
+          <h1 class="footerhead">Ready to <br />Collaborate?</h1>
         </div>
         <div class="right-col">
-          <a href="#">email</a>
-          <a href="#">github</a>
-          <a href="#">twitter</a>
-          <a href="#">linkedin</a>
+          <a href="#" class="email">email</a>
+          <a href="#" class="github">github</a>
+          <a href="#" class="twitter">twitter</a>
+          <a href="#" class="linkedin">linkedin</a>
         </div>
       </div>
       <div class="designed_developed_by">
         <p>Designed and Developed by Sujit Ghogare</p>
       </div>
     </footer>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

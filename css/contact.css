@@ -94,6 +94,14 @@ nav .fa-bars{
     align-items: center;
     padding: 20px;
 }
+.contact_heading .contacthead{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.contact_heading .contacthead .char{
+    transform:translateY(100px);
+    transition: transform .5s;
+}
 .contact_heading h1{
     font-size: 50px;
     font-family:head;
@@ -102,6 +110,14 @@ nav .fa-bars{
     font-size: 20px;
     color:var(--secondary-f-color);
     font-family:sub-head;
+}
+.contact_heading .contactsubhead{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.contact_heading .contactsubhead .char{
+    transform:translateY(100px);
+    transition: transform .5s;
 }
 .page1{
     width: 100%;
@@ -198,6 +214,14 @@ nav .fa-bars{
     font-family:head;
     color: #ffffff;
     line-height: 100px;
+}
+.footer .left-col .footerhead{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.footer .left-col .footerhead .char{
+    transform:translateY(175px);
+    transition: transform .5s;
 }
 .footer .right-col {
     display: flex;

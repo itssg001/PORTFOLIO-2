@@ -97,10 +97,26 @@ nav .fa-bars{
     font-size:50px;
     font-family:head;
 }
+.my-work_heading .myworkhead{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.my-work_heading .myworkhead .char{
+    transform:translateY(100px);
+    transition: transform .5s;
+}
 .my-work_heading p{
     font-size: 20px;
     color: var(--secondary-f-color);
     font-family:sub-head;
+}
+.my-work_heading .myworksub-head{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.my-work_heading .myworksub-head .char{
+    transform:translateY(100px);
+    transition: transform .5s;
 }
 .my-work_page{
     width: 100%;
@@ -113,6 +129,18 @@ nav .fa-bars{
 .my-work_page a{
     text-decoration: none;
     color: #f7f7f7;
+}
+.my-work_page .projectcard1{
+    transform: scale(1);
+}
+.my-work_page .projectcard2{
+    transform: scale(1);
+}
+.my-work_page .projectcard3{
+    transform: scale(1);
+}
+.my-work_page .projectcard4{
+    transform: scale(1);
 }
 .my-work_page .project-card{
     background-color:#535353;
@@ -150,6 +178,14 @@ nav .fa-bars{
     font-family:head;
     color: #ffffff;
     line-height: 100px;
+}
+.footer .left-col .footerhead{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.footer .left-col .footerhead .char{
+    transform:translateY(175px);
+    transition: transform .5s;
 }
 .footer .right-col {
     display: flex;

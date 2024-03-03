@@ -30,6 +30,15 @@ html,body{
     font-family:para;
     src: url(../Assets/fonts/Junge/Junge-Regular.ttf);
 }
+.cursor{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #D14A52;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    box-shadow: 0 0 20px 20px #D14A52;
+}
 nav{
     height: 80px;
     width: 100%;
@@ -92,14 +101,32 @@ nav .fa-bars{
     align-items: center;
     justify-content: space-between;
      padding-top: 160px;
+     position: relative;
 }
 .page1 .left-col h1{
     font-family: head;
     font-size: 60px;
+    z-index: 2;
+}
+.page1 .page1-head {
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.page1 .page1-head .char{
+    transform:translateY(170px);
+    transition: transform .5s;
 }
 .page1 .right-col p{
     font-family: sub-head;
     font-size: 20px;
+    z-index: 2;
+}
+.page1 .right-col .page_sub-head{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  
+}
+.page1 .right-col .page_sub-head .char{
+    transform:translateX(180px);
+    transition: transform .5s;
 }
 .page1 .right-col button{
     margin-top: 20px;
@@ -108,6 +135,7 @@ nav .fa-bars{
     border-radius: 8px;
     border: 1px solid #d9d9d9;
     cursor: pointer;
+    z-index: 2;
 }
 .page1 .right-col .resume-btn a,
 .page1 .right-col .projects-btn a{
@@ -116,11 +144,11 @@ nav .fa-bars{
 }
 /* ---------------------Page2----------------- */
 .page2{
-    /* min-height: 100vh; */
+   
     width: 100%;
     align-items: center;
 }
-.about-wrapper{
+ .page2 .about-wrapper{
     height: 70%;
     width: 100%;
     background-color: var(--secondary-bg-color);
@@ -131,12 +159,9 @@ nav .fa-bars{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: transform 0.2s ease-in-out;
+     transform:scale(1);
 } 
-.page2 .about-wrapper:hover{
-    
-    transform: scale(0.98);
-}
+
 .page2 a{
     text-decoration: none;
     color: var(--primary-f-color);
@@ -188,11 +213,10 @@ nav .fa-bars{
     padding: 10px;
     border-radius: 10px;
     padding: 20px;
-    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    transform: scale(1);
 }
-.page3 .right-col:hover{
-    transform: scale(0.95);
-}
+
 .page3 .right-col h4{
     font-size: 40px;
     text-align: end;
@@ -201,6 +225,7 @@ nav .fa-bars{
     color: var(--secondary-f-color);
     font-family:head;
 }
+
 .page4{
     padding: 0;
     margin-top: 15px;
@@ -291,11 +316,9 @@ nav .fa-bars{
     flex-direction: column;
     gap: 10px;
     border-radius: 20px;
-    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
 }
-.page5 .project-1:hover{
-    transform: scale(0.93);
-}
+
 .page5 .project-1 h1{
     font-size: 30px;
     font-family:head;
@@ -316,11 +339,9 @@ nav .fa-bars{
     flex-direction: column;
     gap: 10px;
     border-radius: 20px;
-    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
 }
-.page5 .project-2:hover{
-    transform: scale(0.93);
-}
+
 .page5 .project-2 h1{
     font-size: 30px;
     font-family:head;
@@ -339,11 +360,9 @@ nav .fa-bars{
     padding: 40px;
     background-color: var(--secondary-bg-color);
     border-radius: 20px;
-    transition: transfrom 0.5s ;
+    transform: scale(1);
 }
-.page5 .project_page_link:hover{
-    transform: scale(0.92);
-}
+
 .page5 .project_page_link p{
     font-size: 25px;
     text-align: center;
@@ -367,6 +386,14 @@ nav .fa-bars{
     color: #ffffff;
     line-height: 100px;
 }
+.footer .left-col .footerhead{
+    font-kerning: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.footer .left-col .footerhead .char{
+    transform:translateY(175px);
+    transition: transform .5s;
+}
 .footer .right-col {
     display: flex;
     flex-direction: column;
@@ -375,11 +402,11 @@ nav .fa-bars{
 .footer .right-col a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     font-family: sub-head;
+    transform: scale(1);
 }
-
 .designed_developed_by{
     padding: 20px;
     background-color: var(--footer-bg-color);
