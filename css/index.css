@@ -486,10 +486,11 @@ nav .fa-bars{
          flex-direction: column;
          gap: 3rem;
      }
-     .footer .left-col h1{
-         font-size: 50px;
-         line-height: 80px;
+     .footer .left-col .footerhead{
+         font-size: 30px;
+         line-height: 50px;
      }
+   
  }
 @media only screen and (min-width:600px) {
  
