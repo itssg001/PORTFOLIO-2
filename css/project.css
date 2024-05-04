@@ -105,7 +105,19 @@ nav .fa-bars{
     border-radius: 12px;
     overflow: hidden;
 }
-
+.build-with-head h4{
+    font-size: 22px;
+    font-family: head;
+    margin-bottom: 25px;
+}
+.build-with{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    margin-bottom: 100px;
+}
 .container .img2 img{
  height: 100vh;   
  object-fit: cover;
