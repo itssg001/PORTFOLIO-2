@@ -132,6 +132,7 @@ nav .fa-bars{
 }
 .my-work_page .projectcard1{
     transform: scale(1);
+   
 }
 .my-work_page .projectcard2{
     transform: scale(1);
@@ -150,6 +151,7 @@ nav .fa-bars{
     gap: 10px;
     border-radius: 20px; 
     width: 400px;
+    
 }
 
 .my-work_page .project-card h1{
@@ -163,6 +165,7 @@ nav .fa-bars{
 }
 .my-work_page .project-card img{
     border-radius: 15px;
+    height: 250px;
 }
 .footer{
     margin-top: 40px;

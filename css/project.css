@@ -239,9 +239,12 @@ nav .fa-bars{
      .container .img1,.img2{
         height: 50vh;
      }
-     .container .img1 img,
-.container .img2 img{
-    width: 100%;
+     .container .img1,
+.container .img2{
+    height: 250px;
+    img{
+        width: 100%;
+    }
     
 }
 .build-with-head h4{
@@ -307,8 +310,19 @@ nav .fa-bars{
         
     }
     .container .img1 {
+        height: 300px;
         img{
-            display: none;
+            width: 100%;
         }
+    }
+
+    .build-with{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+        margin-bottom: 100px;
     }
  }
