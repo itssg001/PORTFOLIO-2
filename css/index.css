@@ -149,7 +149,7 @@ nav .fa-bars{
     align-items: center;
 }
  .page2 .about-wrapper{
-    height: 70%;
+    height: 60%;
     width: 100%;
     background-color: var(--secondary-bg-color);
     border-radius: 20px;
@@ -186,6 +186,7 @@ nav .fa-bars{
 .page3{
     
     width: 100%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,14 +194,14 @@ nav .fa-bars{
     margin-top: 16px;
 }
 .page3 .left-col{
-    height: 280px;
+    height: 100%;
     flex-basis: 70%;
     background-color: var(--secondary-bg-color);
     border-radius: 10px;
     padding: 30px;
 }
 .page3 .left-col p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
     font-family:sub-head;
 }
@@ -209,10 +210,10 @@ nav .fa-bars{
 }
 .page3 .right-col{
     background-color: pink;
-    height: 280px;
+    height: 300px;
     padding: 10px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     text-decoration: none;
     transform: scale(1);
 }
@@ -231,12 +232,13 @@ nav .fa-bars{
     margin-top: 15px;
     width: 100%;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
 }
 .page4 .design_tech{
     height: 250px;
-    width: 300px;
+    width:100%;
     background-color: #76b2f8;
     padding: 20px;
     display: flex;
@@ -251,7 +253,7 @@ nav .fa-bars{
 }
 .page4 .ui_ux {
     height: 250px;
-    width: 300px;
+    width:100%;
     background-color: #D14A52;
     display: flex;
     flex-direction: column;
@@ -275,7 +277,7 @@ nav .fa-bars{
 }
 .page4 .frontend{
     height: 250px;
-    width: 300px;
+    width: 100%;
     background-color: #777777;
     display: flex;
     flex-direction: column;
@@ -510,10 +512,9 @@ nav .fa-bars{
      }
    
  }
-@media only screen and (min-width:600px) {
- 
-     
 
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
     .page1 .left-col h1{
         font-size: 60px;
     }
@@ -530,6 +531,7 @@ nav .fa-bars{
     .page3 .left-col p{
         font-size: 18px;
         line-height: 25px;
+        
     }
     .page3 .right-col{
         height: 280px;
@@ -548,80 +550,87 @@ nav .fa-bars{
     .footer{
         padding: 50px 65px;
     }
-}
-@media only screen and (min-width:1200px){
-.page2 {
-height:500px;
+  }
+  
 
-}
-.page2 .about-wrapper{
-    height: 100%;
-}
-.page2 .left-col h1{
-    font-size: 50px;
-}
-.page2 .left-col h3{
-    font-size: 40px;
-}
-.page2 .right-col img{
-    height: 350px;
-    width: 350px;
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .page2 {
+        height:500px;
+        
+        }
+        .page2 .about-wrapper{
+            height: 100%;
+        }
+        .page2 .left-col h1{
+            font-size: 50px;
+        }
+        .page2 .left-col h3{
+            font-size: 40px;
+        }
+        .page2 .right-col img{
+            height: 350px;
+            width: 350px;
+        
+        }
+        .page3{
+            height: 500px;
+        }
+        .page3 .left-col{
+            height: 100%;
+        
+        }
+        .page3 .right-col{
+            height: 100%;
+        }
+        .page3 .left-col p{
+            font-size: 45px;
+            line-height: 40px;
+            
+        }
+        .page3 .right-col h4{
+            font-size: 60px;
+        }
+        .page4{
+            width: 100%;
+            height: 500px;
+            padding: 0;
+            margin-top: 15px;
+        }
+        .page4 .design_tech{
+            width: 450px;
+            height: 100%;
+        }
+        .page4 .ui_ux{
+            width: 450px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .page4 .frontend i,
+        .page4 .ui_ux i{
+            font-size: 70px;
+        }
+        .page4 .frontend h3,
+        .page4 .ui_ux h3{
+            font-size: 60px;
+        }
+        .page4 .frontend p,
+        .page4 .ui_ux p{
+            font-size: 25px;
+            text-align: center;
+        }
+        .page4 .frontend{
+            width: 450px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+  }
+/* @media only screen and (min-width:1200px){
 
-}
-.page3{
-    height: 500px;
-}
-.page3 .left-col{
-    height: 100%;
-}
-.page3 .right-col{
-    height: 100%;
-}
-.page3 .left-col p{
-    font-size: 45px;
-    line-height: 40px;
-}
-.page3 .right-col h4{
-    font-size: 60px;
-}
-.page4{
-    width: 100%;
-    height: 500px;
-    padding: 0;
-    margin-top: 15px;
-}
-.page4 .design_tech{
-    width: 450px;
-    height: 100%;
-}
-.page4 .ui_ux{
-    width: 450px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.page4 .frontend i,
-.page4 .ui_ux i{
-    font-size: 70px;
-}
-.page4 .frontend h3,
-.page4 .ui_ux h3{
-    font-size: 60px;
-}
-.page4 .frontend p,
-.page4 .ui_ux p{
-    font-size: 25px;
-    text-align: center;
-}
-.page4 .frontend{
-    width: 450px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-}
+} */
 
