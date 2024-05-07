@@ -297,3 +297,18 @@ nav .fa-bars{
      }
    
  }
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+    .container .img2 {
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    .container .img1 {
+        img{
+            display: none;
+        }
+    }
+ }
