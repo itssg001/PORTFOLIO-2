@@ -314,3 +314,14 @@ nav .fa-bars{
          line-height: 50px;
      }
  }
+
+ @media screen and (min-width: 1441px) {
+    .container{
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    nav{
+     padding-left: 210px;
+     padding-right: 210px;
+    }
+  }
