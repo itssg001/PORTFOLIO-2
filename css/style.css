@@ -149,7 +149,7 @@ nav .fa-bars{
     align-items: center;
 }
  .page2 .about-wrapper{
-    height: 60%;
+    height: 30%;
     width: 100%;
     background-color: var(--secondary-bg-color);
     border-radius: 20px;
@@ -159,7 +159,7 @@ nav .fa-bars{
     display: flex;
     align-items: center;
     justify-content: space-between;
-     transform:scale(1);
+    transform:scale(1);
 } 
 
 .page2 a{
@@ -517,6 +517,9 @@ nav .fa-bars{
    
     .page1 .left-col h1{
         font-size: 60px;
+    }
+    .about-wrapper{
+        height: 30%;
     }
     .about-wrapper .left-col h1{
         font-size: 30px;

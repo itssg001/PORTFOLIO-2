@@ -239,61 +239,42 @@ function animationFooter(){
         transform:"scale(1)",
         
     })
-    gsap.to(".footer .onhover_msg-email",{
-        display:"none"
-    })
-   
-  })
+   })
   document.querySelector(".footer .github").addEventListener("mouseenter",function(){
     gsap.to(".footer .github",{
         transform:"scale(0.90)"
     })
-    gsap.to(".footer .onhover_msg-github",{
-        display:"block"
-    })
+   
   })
   document.querySelector(".footer .github").addEventListener("mouseleave",function(){
     gsap.to(".footer .github",{
         transform:"scale(1)"
     })
-    gsap.to(".footer .onhover_msg-github",{
-        display:"none"
-    })
+   
   })
   document.querySelector(".footer .twitter").addEventListener("mouseenter",function(){
     gsap.to(".footer .twitter",{
         transform:"scale(0.90)"
     })
-    gsap.to(".footer .onhover_msg-twitter",{
-        display:"block"
-    })
+  
   })
   document.querySelector(".footer .twitter").addEventListener("mouseleave",function(){
     gsap.to(".footer .twitter",{
         transform:"scale(1)"
     })
-    gsap.to(".footer .onhover_msg-twitter",{
-        display:"none"
-    })
+   
   })
   document.querySelector(".footer .linkedin").addEventListener("mouseenter",function(){
     gsap.to(".footer .linkedin",{
         transform:"scale(0.90)"
     })
-    gsap.to(".footer .onhover_msg-linkedin",{
-        display:"block",
-        delay:0.1,
-        duration:0.2,
-        
-    })
+ 
   })
   document.querySelector(".footer .linkedin").addEventListener("mouseleave",function(){
     gsap.to(".footer .linkedin",{
         transform:"scale(1)"
     })
-    gsap.to(".footer .onhover_msg-linkedin",{
-        display:"none"
-    })
+  
     
   })
 }
